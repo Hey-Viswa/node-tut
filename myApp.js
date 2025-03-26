@@ -6,6 +6,6 @@ let absolutePath = __dirname + "/views/index.html";
 
 
 
-app.get("/", (req, res) => {
-    res.sendFile(absolutePath);
-});
+app.get("/", function(req, res) {
+    res.sendFile(__dirname + "/views/index.html");
+  });
